@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    
 }
 .container{
     display: flex;
@@ -10,19 +11,23 @@
 main{
     width: 100%;
     padding: 10rem;
+    background-color: #eee;
 }
 .sidebar{
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #eee;
     height: 100vh;
+    border-right: .1rem solid #aaa;
 }
 .top-section{
     display: flex;
     align-items: center;
     padding: 10px 7px;
 }
-.logo{
-    font-size: 3rem;
+.logo a{
+    font-size: 2rem;
+    color: #292D3E;
+    padding: 1.5rem 2.5rem;
 }
 .bars{
     display: flex;
@@ -31,7 +36,18 @@ main{
 }
 .link{
     display: flex;
-    color: #fff;
-    padding: 1.5rem 5rem;
+    color: #292D3E;
+    padding: 1.5rem 3rem;
     gap: .7rem;
+    transition: .1s;
+}
+.link:hover{
+    background-color: #aaaaaa8a;
+}
+.active{
+    background-color: #292D3E;
+    color: #fff;
+}
+.icon, .link_text{
+    font-size: 1.5rem;
 }
