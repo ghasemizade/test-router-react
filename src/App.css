@@ -17,7 +17,8 @@ main{
     background-color: #fff;
     color: #eee;
     height: 100vh;
-    border-right: .1rem solid #aaa;
+    /* border-right: .1rem solid #aaa; */
+    /* position: fixed; */
 }
 .top-section{
     display: flex;
