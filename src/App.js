@@ -15,12 +15,13 @@ const App = ()=> {
     <BrowserRouter>
       <SideBar>
         <Routes>
-          <Route path='/dashboard' element={<DashBoard/>}/>
-          <Route path='/homepage' element={<HomePage/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/explore' element={<Explore/>}/>
-          <Route path='/additives' element={<Additives/>}/>
-          <Route path='/setting' element={<Setting/>}/>
+          <Route path='/' element={<DashBoard />}/>
+          <Route path='/dashboard' element={<DashBoard />}/>
+          <Route path='/homepage' element={<HomePage />}/>
+          <Route path='/explore' element={<Explore />}/>
+          <Route path='/about' element={<About />}/>
+          <Route path='/additives' element={<Additives />}/>
+          <Route path='/setting' element={<Setting />}/>
         </Routes>
       </SideBar>
     </BrowserRouter>

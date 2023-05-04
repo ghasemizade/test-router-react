@@ -11,7 +11,7 @@
 main{
     width: 100%;
     padding: 10rem;
-    background-color: #eee;
+    /* background-color: #eee; */
 }
 .sidebar{
     background-color: #fff;

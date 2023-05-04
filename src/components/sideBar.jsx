@@ -11,28 +11,26 @@ import{
 }from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const SideBar = ({Children})=> {
+// const[isOpen, setIsOpen] = useState(false);
+// const toggle = () => setIsOpen (!isOpen);
+const SideBar = ({children})=> {
     const menuItem=[
         {
-            path:"/",
+            path:"/dashboard",
             name:"dashboard",
             icon:<FaTh/>
-        },
-        {
-            path:"/about",
-            name:"About",
-            icon:<FaUserAlt/>
-        },
-        {
-            path:"/additives",
-            name:"Additives",
-            icon:<FaAd/>
         },
         {
             path:"/homepage",
             name:"HomePage",
             icon:<FaHome/>
         },
+        {
+            path:"/additives",
+            name:"Additives",
+            icon:<FaAd/>
+        },
+        
         {
             path:"/explore",
             name:"Explore",
@@ -42,16 +40,21 @@ const SideBar = ({Children})=> {
             path:"/setting",
             name:"Setting",
             icon:<FaAdjust/>
-        }
+        },
+        {
+            path:"/about",
+            name:"About",
+            icon:<FaUserAlt/>
+        },
     ]
     return (
         <div className="container">
             <div className="sidebar">
                 <div className="top-section">
                     <h1 className="logo"><a href="https://halalvar.com">HalalVar</a></h1>
-                    <div className="bars">
+                    {/* <div className="bars">
                         <FaBars/>
-                    </div>
+                    </div> */}
                 </div>
                 {
                     menuItem.map((item, index)=>(
@@ -62,7 +65,7 @@ const SideBar = ({Children})=> {
                     ))
                 }
             </div>
-            <main>{Children}</main>
+            <main>{children}</main>
         </div>
     )
 }
