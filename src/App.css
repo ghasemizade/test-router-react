@@ -50,7 +50,8 @@ main{
     transition: .1s;
 }
 .link:hover{
-    background-color: #2bce9854;
+    /* background-color: #2bce9854; */
+    transform: scale(1.02);
 }
 .active{
     background-color: #2BCE97;
@@ -59,4 +60,52 @@ main{
 }
 .icon, .link_text{
     font-size: 1.5rem;
+}
+
+/* home page design */
+.container-homepage{
+    background-color: #eee;
+    padding: 2rem;
+    border-radius: 3rem;
+    width: 550px;
+}
+.avatar{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 4rem;
+}
+.avatar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10rem;
+    margin-right: 1rem;
+}
+.avatar h3{
+    display: inline;
+}
+.head-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-top p{
+    display: inline;
+}
+
+/* main design */
+.main-content{
+    margin-top: 7rem;
+}
+.main-content h2{
+    margin-bottom: 3rem;
+}
+.banner-box img{
+    width: 552px;
+    border-radius: 3rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.1s;
+}
+.banner-box img:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
