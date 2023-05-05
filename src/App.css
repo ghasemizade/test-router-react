@@ -18,7 +18,7 @@ main{
     color: #eee;
     height: 100vh;
     /* border-right: .1rem solid #aaa; */
-    /* position: fixed; */
+    position: fixed;
 }
 .top-section{
     display: flex;
@@ -27,7 +27,7 @@ main{
 }
 .logo a{
     font-size: 2rem;
-    color: #292D3E;
+    color: #2bce98;
     padding: 1.5rem 2.5rem;
 }
 .bars{
@@ -35,19 +35,27 @@ main{
     font-size: 2rem;
     margin-left: 2rem;
 }
+.items{
+    margin-top: 4rem;
+    width: 10rem;
+}
 .link{
     display: flex;
     color: #292D3E;
     padding: 1.5rem 3rem;
     gap: .7rem;
+    width: 10rem;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
     transition: .1s;
 }
 .link:hover{
-    background-color: #aaaaaa8a;
+    background-color: #2bce9854;
 }
 .active{
-    background-color: #292D3E;
+    background-color: #2BCE97;
     color: #fff;
+    font-weight: 600;
 }
 .icon, .link_text{
     font-size: 1.5rem;

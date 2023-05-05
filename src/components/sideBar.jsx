@@ -1,14 +1,14 @@
 import React, { Children } from "react";
 import '../App.css';
-import{
-    FaAd,
-    FaAdjust,
-    FaBars,
-    FaFileImage,
-    FaHome,
-    FaSafari,
-    FaTh, FaUserAlt,
-}from "react-icons/fa";
+// import{
+//     FaAd,
+//     FaAdjust,
+//     FaBars,
+//     FaFileImage,
+//     FaHome,
+//     FaSafari,
+//     FaTh, FaUserAlt,
+// }from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 // const[isOpen, setIsOpen] = useState(false);
@@ -16,35 +16,30 @@ import { NavLink } from "react-router-dom";
 const SideBar = ({children})=> {
     const menuItem=[
         {
-            path:"/dashboard",
-            name:"dashboard",
-            icon:<FaTh/>
-        },
-        {
             path:"/homepage",
             name:"HomePage",
-            icon:<FaHome/>
+            // icon:<FaHome/>
         },
         {
             path:"/additives",
             name:"Additives",
-            icon:<FaAd/>
+            // icon:<FaAd/>
         },
         
         {
             path:"/explore",
             name:"Explore",
-            icon:<FaSafari/>
+            // icon:<FaSafari/>
         },
         {
             path:"/setting",
             name:"Setting",
-            icon:<FaAdjust/>
+            // icon:<FaAdjust/>
         },
         {
             path:"/about",
             name:"About",
-            icon:<FaUserAlt/>
+            // icon:<FaUserAlt/>
         },
     ]
     return (
@@ -56,6 +51,7 @@ const SideBar = ({children})=> {
                         <FaBars/>
                     </div> */}
                 </div>
+                <div className="items">
                 {
                     menuItem.map((item, index)=>(
                         <NavLink to={item.path} key={index} className="link" activeclassName="active">
@@ -64,6 +60,7 @@ const SideBar = ({children})=> {
                         </NavLink>
                     ))
                 }
+                </div>
             </div>
             <main>{children}</main>
         </div>
