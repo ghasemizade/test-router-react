@@ -28,6 +28,11 @@ const HomePage = ()=> {
                             </div>
                         </div>
                     </div>
+                    <div className="bottom-main">
+                        <div className="history">
+                            <h2>History</h2>
+                        </div>
+                    </div>
                 </div>
             </Typography>
         </Container>
