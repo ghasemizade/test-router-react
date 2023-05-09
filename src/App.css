@@ -65,10 +65,13 @@ main{
 
 /* home page design */
 .container-homepage{
-    background-color: #eee;
+    /* background-color: #eee; */
     padding: 2rem;
     border-radius: 3rem;
     width: 550px;
+}
+.head-top{
+    cursor: pointer;
 }
 .avatar{
     display: flex;
