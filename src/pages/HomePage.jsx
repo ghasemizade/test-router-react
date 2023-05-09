@@ -30,7 +30,8 @@ const HomePage = ()=> {
                     </div>
                     <div className="bottom-main">
                         <div className="history">
-                            <h2>History</h2>
+                            <h2>Paper</h2>
+                            
                         </div>
                     </div>
                 </div>
