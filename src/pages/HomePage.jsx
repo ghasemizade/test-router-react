@@ -30,8 +30,12 @@ const HomePage = ()=> {
                     </div>
                     <div className="bottom-main">
                         <div className="history">
-                            <h2>Paper</h2>
-                            
+                            <h2>News</h2>
+                            <div className="news">
+                                <div className="news-box">
+                                    <img src={require('../news.jpg')} alt="" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
